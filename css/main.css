@@ -1,0 +1,389 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,700&display=swap);
+
+/*
+FONT STYLING
+*/
+html,
+body{
+	font-family: 'Roboto', sans-serif;
+}
+
+/*
+HEADER STYLING
+*/
+.main-header{
+	font-size: 1.3rem;
+	color:rgb(18, 94, 149);
+	padding: 5px;
+	text-align: center;
+}
+
+h2{
+	font-weight: lighter;
+	font-size: 1.5rem;
+	color: rgb(93, 93, 93);
+}
+
+/*
+IMAGE STYLING
+*/
+.main-images {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 1rem;
+}
+
+	/*Pictures response to different screen sizes*/
+@media (max-width: 600px){
+	.main-web{
+		display: none;
+	}
+	.main-mobile{
+		display: block;
+	}
+}
+
+@media (min-width: 601px){
+	.main-web{
+		display: block;
+	}
+	.main-mobile{
+		display: none;
+	}
+}
+
+/*
+BUTTON STYLING
+*/
+
+.button{
+	display: block;
+	margin-top: 7rem;
+    margin-bottom: 3rem;
+	margin-left: auto;
+    margin-right: auto;
+    height: 4rem;
+    width: 20rem;
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    background-color: rgb(18, 94, 149);
+    border-style: none;
+    border-radius: 10px;
+}
+
+	/*Button animation*/
+@keyframes scaleAnimation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.button:hover {
+    background-color: rgb(5, 42, 68);
+	animation: scaleAnimation 1s infinite;
+}
+
+/*
+LOGIN HEADER STYLING
+*/
+.login-header{
+	margin-top: 0.6rem;
+	margin-left: 2rem;
+}
+
+.login-header *{
+    margin: 0.6rem;
+}
+
+/*
+LOGIN FORM STYLING
+*/
+.login-form{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	flex-direction: column;
+	margin-top: 4.5rem;
+}
+
+	/*Seperating elements within the class*/
+.login-form *{
+    margin: 0.7rem 0;
+}
+
+	/*Styling the input form*/
+.login-form .form-text input[type="text"],
+.login-form .form-text input[type="password"]{
+	border: none; 
+	border-bottom: 1px solid rgb(186, 186, 186);
+    width: 300px; 
+	height: 30px;
+}
+
+	/*Styling the radio and link form, placing horizontally*/
+.form-radio, .form-link{
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 1rem;
+	margin-left: 1rem;
+	margin-bottom: 2rem;
+}
+
+.form-link a{
+    text-decoration: none;
+    color: rgb(18, 94, 149);
+}
+
+/*
+HOME HEADER STYLING
+*/
+
+/*Resizing and styling profile icon*/
+.profile-icon{
+	transform: scale(2.8);
+}
+
+.profile-icon{
+	position: absolute;
+    top: 0;
+    right: 0;
+	margin-top: 3rem;
+    margin-right: 2.4rem;
+}
+
+	/*Styling header*/
+.home-header{
+	margin-top: 5rem;
+	margin-left: 2rem;
+}
+
+	/*Styling and placing buttons*/
+.home-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-button-1, .home-button-2{
+	display: block;
+    height: 4rem;
+    width: 10rem;
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    background-color: rgb(18, 94, 149);
+    border-style: none;
+    border-radius: 10px;
+}
+
+.home-button-2{
+    color: rgb(48, 48, 48);
+    background-color: white;
+}
+
+.home-button-1, .home-button-2{
+    display: inline-block;
+    vertical-align: middle;
+	margin-top: 3rem;
+    margin-right: 1rem;
+	margin-left: 1rem;
+	margin-bottom: 2rem;
+}
+
+	/*Animating buttons*/
+.home-button-1:hover{
+    background-color: rgb(5, 42, 68);
+}
+
+.home-button-2:hover{
+    background-color: #eaeced;
+}
+
+	/*Styling h3*/
+h3{
+	font-weight: lighter;
+	color: rgb(93, 93, 93);
+	margin-bottom: 3rem;
+}
+
+/*
+HOME CONTENT STYLING
+*/
+
+	/*Elements response to different screen sizes*/
+@media screen and (max-width: 600px){
+    .image-title{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 600px){
+	.favourite-icon{
+		transform: scale(0.9);
+	}
+}
+
+@media screen and (min-width: 601px){
+	.footer-icon{
+		transform: scale(1.5);
+	}
+}
+
+	/*Pictures response to different screen sizes*/
+	/*First Image*/
+@media (max-width: 600px){
+	.home-web-1{
+		display: none;
+	}
+	.home-mobile-1{
+		display: block;
+	}
+}
+
+@media (min-width: 601px){
+	.home-web-1{
+		display: block;
+	}
+	.home-mobile-1{
+		display: none;
+	}
+}
+	/*Pictures response to different screen sizes*/
+	/*Second Image*/
+@media (max-width: 600px){
+	.home-web-2{
+		display: none;
+	}
+	.home-mobile-2{
+		display: block;
+	}
+}
+
+@media (min-width: 601px){
+	.home-web-2{
+		display: block;
+	}
+	.home-mobile-2{
+		display: none;
+	}
+}
+
+	/*Pictures response to different screen sizes*/
+	/*Third Image*/
+@media (max-width: 600px){
+	.home-web-3{
+		display: none;
+	}
+	.home-mobile-3{
+		display: block;
+	}
+}
+
+@media (min-width: 601px){
+	.home-web-3{
+		display: block;
+	}
+	.home-mobile-3{
+		display: none;
+	}
+}
+
+	/*Pictures response to different screen sizes*/
+	/*Fourth Image*/
+@media (max-width: 600px){
+	.home-web-4{
+		display: none;
+	}
+	.home-mobile-4{
+		display: block;
+	}
+}
+	
+@media (min-width: 601px){
+	.home-web-4{
+		display: block;
+	}
+	.home-mobile-4{
+		display: none;
+	}
+}
+
+	/*Styling content/images*/
+.home-content {
+    display: flex;
+    justify-content: center;
+	align-items: center;
+    flex-wrap: wrap; 
+}
+
+	/*Styling content title and favourite icons*/
+.image-title, .favourite-icon{
+    display: inline-block;
+    vertical-align: middle;
+	margin-top: 1em;
+	margin-bottom: 4rem;
+	margin-right: 10px;
+}
+
+	/*Animating favourite icons*/
+.favourite-icon:hover{
+	cursor: pointer;
+}
+
+.favourite-icon:active{
+	transform: rotateY(180deg) scale(2);
+	color: rgb(239, 78, 78);
+}
+
+	/*Creating space between footer and last content of the page*/
+.item-four{
+	margin-bottom: 4rem;
+}
+
+/*
+FOOTER STYLING
+*/
+
+footer{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background-color: rgb(255, 255, 255);
+	height: 4rem;
+	color: rgb(46, 46, 46);
+	padding: 0.6rem;
+	text-align: center;
+	box-shadow: 8px 16px 10px 8px;
+}
+
+.footer-item{
+    display: inline-block;
+    margin-right: 3.3rem; 
+}
+
+	/*Styling the icons on top of titles*/
+.footer-item a{
+    text-decoration: none;
+    color: rgb(21, 21, 21);
+	display: flex;
+    flex-direction: column;
+}
+
+	/*Creating spacing between icon and titles*/
+.footer-icon{
+	margin-bottom: 0.2rem;
+}
+
+	/*Animating footer*/
+.footer-item:hover{
+    background-color: hsl(0, 0%, 91%);
+}

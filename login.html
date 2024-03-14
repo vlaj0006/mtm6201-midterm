@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/main.css"/>
+
+</head>
+<body>
+    <!--HEADER-->
+        <!--GO BACK ICON-->
+    <header class="login-header">
+        <a href="index.html"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /><span class="material-symbols-outlined">
+            west
+            </span></a>
+        <h1>Login</h1>
+        <h2>Get started with your journey</h2>
+    </header>
+
+    <!--USERNAME AND PASSWORD INPUT FORM-->
+    <main>
+        <form action="home.html" method="GET" class="login-form">
+            <div class="form-text">
+                <label for="username">Username or Email</label><br>
+                <input type="text" id="username" name="username">
+            </div>
+
+            <div class="form-text">
+                <label for="password">Password</label><br>
+                <input type="password" id="password" name="password">
+            </div>
+
+    <!--REMEMBER PASSWORD SELECT FORM-->
+            <div class="form-group">
+                <div class="form-radio"> 
+                    <input type="radio" id="remember" name="remember">
+                    <label for="remember">Remember Password</label>
+                </div>
+
+    <!--FORGOT PASSWORD LINK-->
+                <div class="form-link">
+                    <a href="">Forgot Password</a>
+                </div>
+                
+    <!--CONTINUE BUTTON-->
+            </div>
+                <input type="submit" value="Continue to Login" id="send" class="button">
+            </div>
+        </form>
+    </main>
+</body>
+</html>
